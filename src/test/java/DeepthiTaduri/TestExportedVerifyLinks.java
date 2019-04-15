@@ -28,26 +28,47 @@ public class TestExportedVerifyLinks {
     public void testLinksValidation() throws Exception {
         //open webpage
         driver.get("http://newtours.demoaut.com/");
+        //get page title
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //Verify Sign-on and click  Sign-on link
         driver.findElement(By.linkText("SIGN-ON")).click();
+        //assert title for Sign-on
         assertEquals("Sign-on: Mercury Tours", driver.getTitle());
+        //Verify Support and click  Support
         driver.findElement(By.linkText("SUPPORT")).click();
+        //assert title for Support
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //Verify Contact and click  Contact
         driver.findElement(By.linkText("CONTACT")).click();
+        //assert title for Contact
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //Verify Home and click Home
         driver.findElement(By.linkText("Home")).click();
+        //assert title for Home
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //Verify Flights and click  Flights
         driver.findElement(By.linkText("Flights")).click();
+        //assert title for Flights
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //Verify Hotels and click  Hotels
         driver.findElement(By.linkText("Hotels")).click();
+        //assert title for Hotels
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //Verify Car Rentals and click  Car Rentals
         driver.findElement(By.linkText("Car Rentals")).click();
+        //assert title for Car Rentals
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //Verify Cruises and click  Cruises
         driver.findElement(By.linkText("Cruises")).click();
+        //assert title for Cruises
         assertEquals("Cruises: Mercury Tours", driver.getTitle());
+        //Verify Destinations and click Destinations
         driver.findElement(By.linkText("Destinations")).click();
+        //assert title for Destinations
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //Verify Vacations and click Vacations
         driver.findElement(By.linkText("Vacations")).click();
+        //assert title for Vacations
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
     }
 
