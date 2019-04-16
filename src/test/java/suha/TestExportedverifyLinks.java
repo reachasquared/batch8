@@ -10,7 +10,7 @@ import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-
+// import all the necessary class files
 public class TestExportedverifyLinks {
     private WebDriver driver;
     private String baseUrl;
@@ -24,7 +24,7 @@ public class TestExportedverifyLinks {
         baseUrl = "https://www.katalon.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
-
+//Executing the script
     @Test
     public void testNavigation1() throws Exception {
         //open web page
