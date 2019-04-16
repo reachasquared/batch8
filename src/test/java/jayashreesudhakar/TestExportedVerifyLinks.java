@@ -17,6 +17,7 @@ public class TestExportedVerifyLinks{
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
+    //before executing the script
     @Before
     public void setUp() throws Exception {
         driver = AsquaredWebDriverFactory.getDriver("chrome");
@@ -24,33 +25,51 @@ public class TestExportedVerifyLinks{
         baseUrl = "https://www.katalon.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
-
+//script execution
     @Test
     public void testUntitledTestCase() throws Exception {
+        //open the web page
         driver.get("http://www.newtours.demoaut.com/");
+        //web page will open
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //click on Sign-on link
         driver.findElement(By.linkText("SIGN-ON")).click();
         assertEquals("Sign-on: Mercury Tours", driver.getTitle());
+        //click on Support link
         driver.findElement(By.linkText("SUPPORT")).click();
+        //under construction message should display
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on Contact link
         driver.findElement(By.linkText("CONTACT")).click();
+        //under construction message should display
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on Home link
         driver.findElement(By.linkText("Home")).click();
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //click on Flights link
         driver.findElement(By.linkText("Flights")).click();
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //click on Hotels link
         driver.findElement(By.linkText("Hotels")).click();
+        //under construction message should display
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on Car Rentals link
         driver.findElement(By.linkText("Car Rentals")).click();
+        //under construction message should display
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on Cruises link
         driver.findElement(By.linkText("Cruises")).click();
         assertEquals("Cruises: Mercury Tours", driver.getTitle());
+        //click on Destinations link
         driver.findElement(By.linkText("Destinations")).click();
+        //under construction message should display
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on Vacations link
         driver.findElement(By.linkText("Vacations")).click();
+        //under construction message should display
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
     }
-
+//After script execution
     @After
     public void tearDown() throws Exception {
         driver.quit();
