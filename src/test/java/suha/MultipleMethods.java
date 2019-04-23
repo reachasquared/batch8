@@ -8,23 +8,23 @@ public class MultipleMethods {//class begins
   public void myHome(){
         reception();
         mainHall();
-        storeroom();
+        storeRoom();
     }
     public void reception(){//reception method begins
-    System.out.println("Reception");
-    System.out.println("---------");
-    System.out.println("1.Welcome Desk");
-    System.out.println("2.Telephone");
-    System.out.println("3.Register");
+      System.out.println("Reception");
+      System.out.println("---------");
+      System.out.println("1.Welcome Desk");
+      System.out.println("2.Telephone");
+      System.out.println("3.Register");
         }//reception method ends
-    public void mainHall(){//mainHall method begins
+     public void mainHall(){//mainHall method begins
      System.out.println("MainHall");
      System.out.println("---------");
      System.out.println("1.WhiteBoard");
      System.out.println("2.Tables");
      System.out.println("3.Chairs");
     }//mainHall method ends
-    public void storeroom(){//storeRoom method begins
+    public void storeRoom(){//storeRoom method begins
     System.out.println("StoreRoom");
     System.out.println("----------");
     System.out.println("1.SafeBox");

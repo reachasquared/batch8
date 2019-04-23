@@ -1,8 +1,9 @@
 package suha;
 
-public class MyFirstJavaClass {
-    public void myFirstJavaClass(){//method ends
+public class MyFirstJavaClass {//class begins
+    public void myFirstJavaClass(){//method begins
 
-    }
+    }//method ends
 
-}
+}//class ends
+
