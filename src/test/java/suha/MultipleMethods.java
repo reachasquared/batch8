@@ -10,7 +10,7 @@ public class MultipleMethods {//class begins
         mainHall();
         storeRoom();
     }
-    public void reception(){//reception method begins
+   public void reception(){//reception method begins
       System.out.println("Reception");
       System.out.println("---------");
       System.out.println("1.Welcome Desk");

@@ -1,9 +1,14 @@
 package suha;
 
-public class MyFirstJavaClass {//class begins
-    public void myFirstJavaClass(){//method begins
+import org.junit.Test;
 
-    }//method ends
-
-}//class ends
+public class MyFirstJavaClass {
+    //class begins
+    @Test
+    public void myFirstJavaClass(){
+        //method begins
+    }
+    //method ends
+}
+//class ends
 
