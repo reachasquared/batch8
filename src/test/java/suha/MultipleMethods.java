@@ -3,10 +3,9 @@ package suha;
 import org.junit.Test;
 
 public class MultipleMethods {//class begins
-
-    //junit annotations @test
+  //junit annotations @test
     @Test
-    public void myHome() {
+  public void myHome(){
         reception();
         mainHall();
         storeroom();
@@ -35,5 +34,4 @@ public class MultipleMethods {//class begins
         System.out.println("2.Paints");
         System.out.println("3.PaintBrushes");
     }//storeRoom method ends
-
 }//class ends
