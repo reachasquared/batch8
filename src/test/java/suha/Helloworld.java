@@ -2,10 +2,10 @@ package suha;
 
 import org.junit.Test;
 
-public class Helloworld {
+public class HelloWorld {
   //junit annotations this is test method to execute
   @Test
-    public void Myhelloworld(){
-      System.out.println("Helloworld");  }
+    public void MyHelloWorld(){//method begins
+      System.out.println("HelloWorld");  }//method ends
 
-}
+}//class ends
