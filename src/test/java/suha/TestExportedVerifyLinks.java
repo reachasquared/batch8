@@ -11,14 +11,16 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 // import all the necessary class files
-public class TestExportedverifyLinks {
+public class TestExportedVerifyLinks {
+    //class begins
     private WebDriver driver;
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
-//before executing the script
+//annotation before executing the script
     @Before
     public void setUp() throws Exception {
+        //method begins
         driver = AsquaredWebDriverFactory.getDriver("chrome");
 
         baseUrl = "https://www.katalon.com/";
@@ -29,29 +31,50 @@ public class TestExportedverifyLinks {
     public void testNavigation1() throws Exception {
         //open web page
         driver.get("http://newtours.demoaut.com/");
+        //verify welcome:Mercury Tours displayed
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //click on sign-on link
         driver.findElement(By.linkText("SIGN-ON")).click();
+        //verify sign-on link open
         assertEquals("Sign-on: Mercury Tours", driver.getTitle());
+        //click on support link
         driver.findElement(By.linkText("SUPPORT")).click();
+        //verify support link is showing under construction
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on contact link
         driver.findElement(By.linkText("CONTACT")).click();
+        //verify the link contact is showing under construction
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on home link
         driver.findElement(By.linkText("Home")).click();
+        //verify welcome:Mercury Tours page is displaying
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //click on flights link
         driver.findElement(By.linkText("Flights")).click();
+        //verify flight finder page is open
         assertEquals("Welcome: Mercury Tours", driver.getTitle());
+        //click on hotels link
         driver.findElement(By.linkText("Hotels")).click();
+        //verify the link is showing under construction
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on car rentals link
         driver.findElement(By.linkText("Car Rentals")).click();
+        //verify the link is showing under construction
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on link cruises
         driver.findElement(By.linkText("Cruises")).click();
+        //verify the link is taking to the cruises page
         assertEquals("Cruises: Mercury Tours", driver.getTitle());
+        //click on destinations
         driver.findElement(By.linkText("Destinations")).click();
+        //verify the page is showing under construction
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
+        //click on vacations link
         driver.findElement(By.linkText("Vacations")).click();
+        //verify the link is showing under construction
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
-    }
-
+            }
+//annotation after
     @After
     public void tearDown() throws Exception {
         driver.quit();
@@ -94,3 +117,4 @@ public class TestExportedverifyLinks {
         }
     }
 }
+//class ends

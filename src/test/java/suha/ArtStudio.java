@@ -2,53 +2,48 @@ package suha;
 
 import org.junit.Test;
 
-public class ArtStudio {
+public class ArtStudio {//Class begins
     @Test
     public void myArtStudio(){
      //method calling
-        Isee();
+        ISee();
      //printing television
      System.out.println("Television");
      //method calling
-     Isee();
+     ISee();
      //printing chairs
      System.out.println("Chairs");
      //method calling
-     Isee();
+     ISee();
      //printing tables
      System.out.println("Tables");
      //method calling
-     Isee();
+     ISee();
      //printing canvas
       System.out.println("Canvas");
       //method calling
-      Isee();
+      ISee();
       //printing laptops
       System.out.println("Laptops");
       //calling method
-      Isee();
+      ISee();
       //printing whiteboards
       System.out.println("Whiteboard");
       //method calling
-      Isee();
+      ISee();
       //printing pencils
       System.out.println("Pencils");
       //method calling
-      Isee();
+      ISee();
       //printing colors
       System.out.println("Colors");
       //method calling
-      Isee();
+      ISee();
       //printing paintbrushes
       System.out.println("Paintbrushes");
     }
     //method declaration
-    public void Isee(){
-     System.out.print("At Prachee Arts I See ");    }
-
-
-
-
-
-
-}
+    public void ISee(){
+     System.out.print("At Prachee Arts I See ");
+    }//method ends
+}//class ends

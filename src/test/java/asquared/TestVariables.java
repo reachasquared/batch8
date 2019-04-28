@@ -6,10 +6,10 @@ import org.junit.Test;
  * Variables allow the Java program to store values during the runtime of the program.
  * In this class we can learn the Types and use of them
  */
-public class Test_Variables {
+public class TestVariables {
     @Test
     public void variables(){
-        //Variable declaration
+        //Variable declaration at method level
         // character variable that can hold one character data
         char gender;
         // Integer variable that can hold an integer value
