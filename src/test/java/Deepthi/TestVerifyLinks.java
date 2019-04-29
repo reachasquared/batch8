@@ -1,4 +1,4 @@
-package deepthitaduri;
+package Deepthi;
 
 import core.engine.AsquaredWebDriverFactory;
 import org.junit.After;

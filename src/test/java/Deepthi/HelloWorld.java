@@ -1,4 +1,4 @@
-package deepthitaduri;
+package Deepthi;
 
 //This will print 'Hello Asquared' as the output
 

@@ -1,4 +1,4 @@
-package deepthitaduri;
+package Deepthi;
 
 import core.GlobalVariables;
 import org.junit.Test;
