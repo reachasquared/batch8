@@ -14,11 +14,11 @@ public class Test_InstantiatingClass {
 
 
 
-        //Test_VariablesAndMethods variablesAndMethods = new Test_VariablesAndMethods();
-        /*variablesAndMethods.displayValues();
+        Test_VariablesAndMethods variablesAndMethods = new Test_VariablesAndMethods();
+        variablesAndMethods.displayValues();
 
         variablesAndMethods.weekDay = "Tuesday";
         variablesAndMethods.gender = 'f';
-        variablesAndMethods.displayValues();*/
+        variablesAndMethods.displayValues();
     }
 }
