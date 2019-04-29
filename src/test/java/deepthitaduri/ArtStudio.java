@@ -1,4 +1,4 @@
-package DeepthiTaduri;
+package deepthitaduri;
 
 import org.junit.Test;
 
