@@ -13,20 +13,21 @@ import org.openqa.selenium.support.ui.Select;
 // import all the necessary class files
 public class TestExportedVerifyLinks {
     //class begins
+    //class variables begins
     private WebDriver driver;
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 //annotation before executing the script
     @Before
-    public void setUp() throws Exception {
+     public void setUp() throws Exception {
         //method begins
         driver = AsquaredWebDriverFactory.getDriver("chrome");
 
-        baseUrl = "https://www.katalon.com/";
+        baseUrl = "https://www.newtours.demoaut.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
-//Executing the script
+//Executing the script(method)
     @Test
     public void testNavigation1() throws Exception {
         //open web page
@@ -74,7 +75,7 @@ public class TestExportedVerifyLinks {
         //verify the link is showing under construction
         assertEquals("Under Construction: Mercury Tours", driver.getTitle());
             }
-//annotation after
+//junit annotation after
     @After
     public void tearDown() throws Exception {
         driver.quit();
