@@ -20,14 +20,14 @@ public class TestInheritance extends GlobalVariables {
         gender='M';
         status = false;
 
-        printVariables();
+        displayValues();
 
         age = age-3;
         fullName = fullName+" Kiran";
         gender='M';
         status = true;
 
-        printVariables();
+        displayValues();
 
 
     }//method ends
