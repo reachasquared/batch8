@@ -23,8 +23,7 @@ public class TestExportedVerifyLinks {
      public void setUp() throws Exception {
         //method begins
         driver = AsquaredWebDriverFactory.getDriver("chrome");
-
-        baseUrl = "https://www.newtours.demoaut.com/";
+        baseUrl = "http://www.katalon.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 //Executing the script(method)
