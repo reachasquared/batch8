@@ -1,4 +1,4 @@
-package asquared;
+package suha;
 
 import core.engine.AsquaredWebDriverFactory;
 import org.junit.After;
@@ -12,48 +12,45 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-/**
- * @project batch8
- * Creation date: 28-04-2019
- */
 public class TestVerifyLinks {
     private WebDriver driver;
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
-    //Before executing the script
     @Before
     public void setUp() throws Exception {
+        //method begins
         driver = AsquaredWebDriverFactory.getDriver("chrome");
         baseUrl = "http://www.newtours.demoaut.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @Test
-    public void testVerifyLinks(){
+    public void testVerifyLinks() {
 
         // Go to http://newtours.demoaut.com/
         driver.get(baseUrl);
+// Verify page title is "Welcome: Mercury Tours"
+        driver.getTitle().equalsIgnoreCase("Welcome: Mercury Tours");
 
-        // Verify page title is "Welcome: Mercury Tours"
-        assertTrue(driver.getTitle()
-                .equalsIgnoreCase("Welcome: Mercury Tours"));
-
-        // Verify Home link exist
-        //assertTrue(driver.findElement(By.linkText("Home")).isDisplayed());
+// Verify Home link exist
         assertTrue(driver.findElement(By.linkText("Home")).isDisplayed());
 
-        // Verify Flights link exist
-        assertTrue(driver.findElement(By.linkText("Flights"))
-                .isDisplayed());
+// Verify Flights link exist
+        assertTrue(driver.findElement(By.linkText("Flights")).isDisplayed());
 
-        // Verify Hotels link exist
+// Verify Hotels link exist
+        assertTrue(driver.findElement(By.linkText("Hotels")).isDisplayed());
 
-        //Verify Cars link exist
+//Verify Cars link exist
+        assertTrue(driver.findElement(By.linkText("Cars Rentals")).isDisplayed());
 
-        // Verify Cruises link exist
-    }
+// Verify Cruises link exist
+        assertTrue(driver.findElement(By.linkText("Cruises")).isDisplayed());
+
+}
+
     @After
     public void tearDown() throws Exception {
         driver.quit();
