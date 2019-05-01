@@ -45,6 +45,8 @@ public class TestVerifyLinks {
         assertTrue(driver.findElement(By.linkText("Home")).isDisplayed());
 
         // Verify Flights link exist
+        assertTrue(driver.findElement(By.linkText("Flights"))
+                .isDisplayed());
 
         // Verify Hotels link exist
 
