@@ -27,8 +27,7 @@ public class TestLogin extends global {
 // Atlanta to Las Vegas	$398
         logger.info("Atlanta to Las Vegas $398");
         assertTrue(driver.findElement(
-                By.xpath(
-                        "//font[contains(text(),'Atlanta ')]/../following-sibling::td//b[text()='$398']")).isDisplayed());
+                By.xpath("//font[contains(text(),'Atlanta ')]/../following-sibling::td//b[text()='$398']")).isDisplayed());
 // Boston to San Fransisco	$513
 // Los Angeles to Chicago $168
 // New York to Chicago	$198
